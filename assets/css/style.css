@@ -5,6 +5,8 @@ body {
   background-image: url('assets/images/knitting250px.jpg');
   background-repeat: repeat;
   overflow-x: hidden;
+  position: relative;
+  height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,14 +40,17 @@ footer {
   background-color: #2c4459;
   color: #ffffff;
   padding: 20px;
-  position: absolute;
   bottom: 0px;
-  width: 100%
+  width: 100%;
 }
 
 header {
   background-color: #d97e7e;
   margin-bottom: 50px;
+}
+
+form {
+  margin: 30px;
 }
 
 #logo {
@@ -60,14 +65,19 @@ header {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
-  margin-top: 25px;
+  padding-top: 25px;
   display: inline;
   float: right;
 }
 
 #nav li {
   display: inline;
-  padding: 5px;
+  padding-right: 10px;
+  border-right: 1px solid #d9ada9;
+}
+
+#nav li:hover {
+  background-color: #d9ada9;
 }
 
 #nav a {
@@ -86,4 +96,33 @@ header {
   float: left;
   margin: 30px;
   border-radius: 50%;
+}
+
+.div-set {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  margin: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  bottom: 25px;
+}
+
+.project-label {
+  background-color: #2c4459;
+  color: #ffffff;
+  width: 250px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
 }
